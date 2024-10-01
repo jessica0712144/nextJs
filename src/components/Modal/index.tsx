@@ -35,7 +35,7 @@ export const Modal: React.FC<ModalProps> = ({ children, title, isOpen, ...props 
 	if (!isOpen) return null;
 
 	return (
-		<div data-modal-wrapper className={styles.wrapper} onClick={handleCloseClick} onKeyDown={handleKeyDown}>
+		<div data-modal-wrapper className={styles.wrapper} onKeyDown={handleKeyDown}>
 			<div data-modal-container>
 				<header data-modal-header>
 					<h2>{title}</h2>
